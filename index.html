@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="m-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+                <img class="h-full" src="images/money.png" alt="">
+            </div>
+            <div class="bg-slate-200 text-center pb-5">
+                <h3 class="text-3xl font-semi-bold">Income</h3>
+
+               Income : <input id="income-range" class="mt-5 ml-4 py-2 px-4 bg-stone-100" type="text"  name="" id="">
+               <h3 class="mt-3 text-3xl mb5">Expenses</h3>
+               <div>
+                Food : <input id="food-cost" class="ml-4 py-2 px-8 me-5 bg-stone-100 mt-6" type="text" name="" id="">
+               </div>
+               <div>
+                Rent : <input id="rent-cost" class="ml-4 py-2 px-8 me-5 bg-stone-100 mt-6" type="text" name="" id="">
+               </div>
+               <div>
+                Clothes : <input id="clothes-cost" class="ml-4 py-2 px-8 me-5 bg-stone-100 mt-6" type="text" name="" id="">
+               </div>
+               <button id="calculate-btn" class="mt-5 bg-sky-600 mb-4 px-7 py-3 text-2xl text-white rounded-md">Calculate</button>
+               
+               <h2>Total Expenses: <span id="total-expense">00</span></h2>
+               <h3>Balance: <span id="after-balance">00</span></h3>
+               Save : <input id="saving-field" class="py-3 px-5" type="text" name="" id="">
+               <span class="m-2">%</span>
+               <button id="save-btn" class="mt-5 bg-sky-600 px-5 py-2 text-2xl text-white ">Save</button>
+
+               <h3 class="mt-5 text-2xl ">Saving Amount:<span id="savings-amount" class="ml-2">00</span></h3>
+               <h2 class="mt-3 text-2xl ">Remaining Balance:<span class="ml-2" id="remaining-balance">00</span></h2>
+            </div>
+        </div>
+    </section>
+    <script src="js/utility.js"></script>
+    <script src="js/money.js"></script>
+</body>
+</html>
